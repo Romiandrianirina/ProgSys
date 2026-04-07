@@ -1,0 +1,15 @@
+a/Capacite total du disque = 2*4*1000*60*1024 = 245760000 octets
+
+b/Position de l'octet 300 d du secteur 45 du cylindre 350 de la face 2
+face 2 = 1000*60*1024 = 61440000octets
+cylindre avant 350 = 350*60*1024 = 21504000octets
+Secteur avant 45*1024 = 46080octets
++les 300 octets
+---->  82 990 380
+
+c/secteur pour l'octet 78000000
+face ? 78000000 / 61440000 = 1 avec reste = 16560000 < 61440000 donc face 2
+cylindre ? octet par cylindre = 60*1024 = 61440
+cylindre? 16560000 / 61440 = 269 avec reste = 32640 < 61440 donc cylindre 269
+secteur? octet par secteur = 1024;
+secteur? 32640 / 1024 = 31 avec reste = 896 < 1024 donc secteur 31
